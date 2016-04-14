@@ -4,16 +4,7 @@ rvm:
   - 1.9.2
   - 1.9.3
   - 2.0.0
-env:
-  - "RAILS_VERSION=3.2"
-  - "RAILS_VERSION=master"
-matrix:
-  allow_failures:
-    - rvm: 2.0.0
-    - env: "RAILS_VERSION=master"
-  exclude:
-    - rvm: 1.8.7
-      env: "RAILS_VERSION=master"
-    - rvm: 1.9.2
-      env: "RAILS_VERSION=master"
-
+gemfile:
+  - gemfiles/3.2.gemfile
+  - gemfiles/4.2.gemfile
+  - gemfiles/5.0.gemfile
