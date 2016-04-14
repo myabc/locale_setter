@@ -1,4 +1,4 @@
-class I18n
+module I18n
   def self.locale
     @@locale ||= ""
   end
